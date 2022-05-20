@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::group(['prefix' => 'product'], function () {
+    Route::get('/', [ProductController::class, 'index']);
+    Route::get('{id}', [ProductController::class, 'detail'])->where('id', '[0-9]+');
 });
