@@ -84,6 +84,18 @@ services:
             - '/dev/shm:/dev/shm'
         networks:
             - sail
+    ### phpMyAdmin ###########################################
+    phpmyadmin:
+      image: phpmyadmin/phpmyadmin:latest
+      ports:
+        - "8888:80"
+      environment:
+        PMA_ARBITRARY: 1 #可以輸入自己的 mysql ip
+        MYSQL_USER: '${DB_USERNAME}'
+        MYSQL_PASSWORD: '${DB_PASSWORD}'
+        MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+      networks:
+        - sail
 networks:
     sail:
         driver: bridge

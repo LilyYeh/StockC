@@ -36,13 +36,11 @@ class ProductController extends Controller
     
     public function detail($id)
     {
-        /*$productInfo = Item::find($id);
+        $productInfo = Item::find($id);
         
         return view('productDetail',[
             'productInfo' => $productInfo
-        ]);*/
-    
-        return view('productDetail');
+        ]);
     }
     
     public function getMarketPrice(Request $request)
