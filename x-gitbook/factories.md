@@ -1,10 +1,10 @@
 # Database: Factories
 產出測試資料的工廠<br>
-####步驟1. 執行指令以新增 database/factories/
+#### 步驟1. 執行指令以新增 database/factories/
 ```
 > php artisan make:factory ItemFactory
 ```
-####步驟2. 編輯 ItemFactory.php。ItemFactory.php 包含2個 function<br>
+#### 步驟2. 編輯 ItemFactory.php。ItemFactory.php 包含2個 function<br>
 - 第1個. definition() 預設欄位資料
 ```
 public function definition()

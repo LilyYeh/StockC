@@ -1,9 +1,9 @@
 ##Database: Seeding 
-####步驟1. 執行指令以新增 database/seeders/
+#### 步驟1. 執行指令以新增 database/seeders/
 ```
 > php artisan make:seeder ItemSeeder
 ```
-####步驟2. 編輯 ItemSeeder.php。seeder 只包含一個 method：run()
+#### 步驟2. 編輯 ItemSeeder.php。seeder 只包含一個 method：run()
 ```
 use App\Models\Item;
 
@@ -12,7 +12,7 @@ public function run()
     Item::factory(50)->create();
 }
 ```
-####步驟3. 使用 Models 和 Factories 產出資料
+#### 步驟3. 使用 Models 和 Factories 產出資料
 - 輸入資料庫的永久性資料
 ```
 $items = Item::factory()->count(3)->create();
@@ -41,7 +41,7 @@ public function run()
             ->create();
 }
 ```
-####步驟4. Running Seeder
+#### 步驟4. Running Seeder
 ```
 > php artisan db:seed
 
