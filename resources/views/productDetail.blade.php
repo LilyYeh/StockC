@@ -41,10 +41,10 @@
 <body>
 <div id="productDetail">
     <section class="product">
-        <h2>Product Name</h2>
-        <div class="productImg"><img src="{{asset('storage/a.png')}}"></div>
+        <h2>{{$productInfo->name}}</h2>
+        <div class="productImg"><img src="{{$productInfo->image}}"></div>
     </section>
-    <deal :product="1"></deal>
+    <deal :product="{{$productInfo->id}}"></deal>
 </div>
 <script src="/js/productDetail.js"></script>
 </body>

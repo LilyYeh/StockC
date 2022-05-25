@@ -21,4 +21,7 @@ Route::get('/', function () {
 Route::group(['prefix' => 'product'], function () {
     Route::get('/', [ProductController::class, 'index']);
     Route::get('{id}', [ProductController::class, 'detail'])->where('id', '[0-9]+');
+    Route::get('marketPrice', [ProductController::class, 'getMarketPrice']);
+    Route::get('pendingOrder', [ProductController::class, 'getPendingOrder']);
+    Route::post('pendingOrder', [ProductController::class, 'pendingOrder']);
 });
