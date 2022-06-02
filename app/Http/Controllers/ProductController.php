@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Events\BarnMatched;
 use Illuminate\Http\Request;
 use App\Models\Item;
 use App\Models\Barn;
