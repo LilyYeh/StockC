@@ -81,13 +81,13 @@
 
 	.deal .marketPrice.up .priceSpread:before,
 	.deal .marketPrice.up .rate:before {
-		content:url("/image/up.svg");
+		content:url("/img/up.svg");
 		margin-right: 6px;
 	}
 
 	.deal .marketPrice.down .priceSpread:before,
 	.deal .marketPrice.down .rate:before {
-		content:url("/image/down.svg");
+		content:url("/img/down.svg");
 		margin-right: 6px;
 	}
 
@@ -275,19 +275,20 @@
 			}
 		},
 		mounted: function () {
-			/*Pusher.logToConsole = true;
+			Pusher.logToConsole = true;
 			Echo.channel('product.'+this.product)
 				.listen('.pendingOrder', (e) => {
+					console.log('listening .pendingOrder')
 					console.log(e);
 					this.buy = e.data.buy;
 					this.sell = e.data.sell;
 
 				}).listen('.clinch', (e) => {
-				console.log(e);
-				this.marketPrice = e.data.marketPrice;
-				this.priceSpread = e.data.priceSpread;
-				this.rate = e.data.rate;
-			});*/
+					console.log(e);
+					this.marketPrice = e.data.marketPrice;
+					this.priceSpread = e.data.priceSpread;
+					this.rate = e.data.rate;
+				});
 			this.getMarketPrice();
 			this.getPendingOrder();
 		},
