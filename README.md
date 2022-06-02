@@ -36,8 +36,7 @@ php artisan migrate
 php artisan db:seed
 ```
 
-
-## 我的筆記：
+## 實作筆記：
 - 環境建置
    - [使用 sail 建置 laravel](x-gitbook/sail.md)
    - [建置 vue3](x-gitbook/vue3.md)
@@ -45,9 +44,9 @@ php artisan db:seed
    - [Database: Migrations](x-gitbook/migrations.md)
    - [Database: Factories](x-gitbook/factories.md)
    - [Database: Seeding](x-gitbook/seeding.md)
-- Laravel 模組
-   - Queue Job
-   - Broadcast
-   - Event, Event Listener
+- 使用到的 Laravel 模組
+   - [Queues](x-gitbook/queues.md)
+   - [Broadcasting](x-gitbook/broadcasting.md)
+   - [Event, Event Listener](x-gitbook/event.md)
 - 其他
    - [小工具](x-gitbook/tool.md)
