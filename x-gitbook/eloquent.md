@@ -7,6 +7,7 @@
 ```
 #### 步驟2. 建立關係 Relationships
 - 一對多 One to Many
+
 ```
 namespace App\Models;
  

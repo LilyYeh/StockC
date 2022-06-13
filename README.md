@@ -8,7 +8,7 @@
 </p>
 
 # StockC 使用 Laravel 9.x 
-[使用 Git Page 瀏覽](https://lilyyeh.github.io/stockc/) <br><br>
+[使用 Git Page 瀏覽](https://lilyyeh.github.io/StockC/) <br><br>
 實作一個股票掛單系統，練習使用 laravel 一些實用的模組。<br>
 以下是本專案會使用到的 laravel 相關技術＆實作筆記：
 - 環境建置
