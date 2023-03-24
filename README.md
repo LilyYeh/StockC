@@ -53,4 +53,9 @@ php artisan migrate
 - 執行指令匯入資料
 ```
 php artisan db:seed
+php artisan db:seed --class=ItemSeeder
+```
+- 執行指令啟動 broadcast
+```
+php artisan queue:work
 ```
