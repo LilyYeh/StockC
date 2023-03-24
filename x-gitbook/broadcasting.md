@@ -71,12 +71,12 @@ window.Echo = new Echo({
 ```
 > npm run dev
 ```
-####步驟4. 廣播最佳五檔至每個 Client
+#### 步驟4. 廣播最佳五檔至每個 Client
 - 產生「廣播事件」
 ```
 > php artisan make:event PendingOrder
 ```
-####步驟5. PendingOrder event 架構
+#### 步驟5. PendingOrder event 架構
 - Server Side
 ```
 namespace App\Events;
